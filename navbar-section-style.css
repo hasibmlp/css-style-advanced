@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 10px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-basis: 30%;
+
+  padding: 1.5rem;
+  background-color: rgb(33, 119, 211);
+}
+
+.sec1,
+.sec2,
+.sec3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.sec1,
+.sec2 {
+  border-bottom: 1px solid rgba(224 224 224 /0.4);
+  padding-bottom: 1.5rem;
+}
+
+.sec1__form {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+}
+.sec2__search {
+  align-items: center;
+}
+
+.sec1__form select,
+.sec2__search--form select,
+.sec2__search--form input:last-child {
+  background-color: rgb(72, 136, 204);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.sec1__form label {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.sec1-nav {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.sec1-nav li,
+.sec3__nav li {
+  list-style: none;
+}
+
+.sec1-nav li a,
+.sec3__nav li a,
+.sec3__call-id p a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.sec2 > div {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.sec2__search--logo {
+  color: white;
+  font-size: 1.35rem;
+}
+
+.sec2__search--form input[type="search"] {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  width: 30rem;
+}
+
+.sec2__account--wishinglist,
+.spec2__account--login {
+  display: flex;
+  column-gap: 1.5rem;
+  align-items: center;
+  color: white;
+}
+
+.sec2__account--wishinglist > div,
+.spec2__account--login > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.sec3__nav,
+.sec3__call-id {
+  display: flex;
+  column-gap: 1.5rem;
+  color: white;
+  font-size: 1.3rem;
+}
